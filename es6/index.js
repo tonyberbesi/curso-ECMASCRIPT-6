@@ -105,6 +105,28 @@ class calculator {
 const calc = new calculator();
 console.log(calc.sum(2, 2));
 
+import {hello} from "./module";
+
+hello();
+
+
+// algoritmo logica como retornar nuestros elementos
+
+function* helloworld() {
+    if (true) {
+        yield "hello, ";
+    }
+    if (true) {
+        yield "world";
+    }
+};
+
+const generatorhello = helloworld();
+console.log(generatorhello.next().value);
+console.log(generatorhello.next().value);
+console.log(generatorhello.next().value);
+
+
 
 
 
